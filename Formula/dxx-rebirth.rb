@@ -1,9 +1,9 @@
 class DxxRebirth < Formula
   desc "An enhanced source port of the Descent 1 and Descent ][ engines"
   homepage "https://www.dxx-rebirth.com"
-  version "20200828"
-#  url "https://www.dxx-rebirth.com/download/dxx/rebirth/dxx-rebirth_#{version}-src.tar.xz"
-#  sha256 "6cb932fab46359a7f154d4bcc0562c49bbfd3174d513966e191014708ac3c6a4"
+  version "20201029"
+  url "https://www.dxx-rebirth.com/download/dxx/rebirth/dxx-rebirth_#{version}-src.tar.xz"
+  sha256 "6cb932fab46359a7f154d4bcc0562c49bbfd3174d513966e191014708ac3c6a4"
   head "https://github.com/dxx-rebirth/dxx-rebirth.git"
   license "GPL-3.0-only"
 
@@ -13,13 +13,6 @@ class DxxRebirth < Formula
   depends_on "sdl_mixer"
   depends_on "libpng"
   depends_on "physfs"
-
-  head do
-    patch do
-      url "https://github.com/Kreeblah/dxx-rebirth/commit/a36f6866dac0b58c586724d5013da44740ada727.patch"
-      sha256 "33724bdb61362c90caf635c788753bb2a40db28905f08fa1277c5a1c5041a0af"
-    end
-  end
 
   def install
     system "scons", "macos_add_frameworks=False"
