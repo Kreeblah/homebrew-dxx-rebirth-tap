@@ -3,7 +3,7 @@ class DxxRebirth < Formula
   homepage "https://www.dxx-rebirth.com"
   version "20201029"
   url "https://www.dxx-rebirth.com/download/dxx/rebirth/dxx-rebirth_#{version}-src.tar.xz"
-  sha256 "6cb932fab46359a7f154d4bcc0562c49bbfd3174d513966e191014708ac3c6a4"
+  sha256 "e14ba5ce02919bb9d0d7f98f5eae410aae6f24ef22c7286da5f3ffc80130983e"
   head "https://github.com/dxx-rebirth/dxx-rebirth.git"
   license "GPL-3.0-only"
 
