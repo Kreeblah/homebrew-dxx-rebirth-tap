@@ -8,6 +8,7 @@ class DxxRebirth < Formula
   license "GPL-3.0-only"
 
   depends_on "scons" => :build
+  depends_on "pkg-config" => :build
   depends_on "sdl"
   depends_on "sdl_image"
   depends_on "sdl_mixer"
