@@ -7,6 +7,11 @@ class DxxRebirth < Formula
   license "GPL-3.0-only"
   head "https://github.com/dxx-rebirth/dxx-rebirth.git"
 
+  livecheck do
+    url "https://www.dxx-rebirth.com/download-dxx-rebirth/"
+    regex(/dxx-rebirth_(\d+)-src\.t/i)
+  end
+
   depends_on "dylibbundler" => :build
   depends_on "pkg-config" => :build
   depends_on "scons" => :build
