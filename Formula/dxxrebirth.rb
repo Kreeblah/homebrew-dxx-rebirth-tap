@@ -1,5 +1,5 @@
 class DxxRebirth < Formula
-  desc "Enhanced source port of the Descent 1 and Descent ][ engines"
+  desc "Enhanced source port of Descent and Descent ][ engines"
   homepage "https://www.dxx-rebirth.com"
   url "https://www.dxx-rebirth.com/download/dxx/rebirth/dxx-rebirth_#{version}-src.tar.xz"
   version "20211021"
