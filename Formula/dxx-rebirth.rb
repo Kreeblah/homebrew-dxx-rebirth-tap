@@ -1,14 +1,15 @@
 class DxxRebirth < Formula
   desc "An enhanced source port of the Descent 1 and Descent ][ engines"
   homepage "https://www.dxx-rebirth.com"
-  version "20201029"
+  version "20211021"
   url "https://www.dxx-rebirth.com/download/dxx/rebirth/dxx-rebirth_#{version}-src.tar.xz"
-  sha256 "e14ba5ce02919bb9d0d7f98f5eae410aae6f24ef22c7286da5f3ffc80130983e"
+  sha256 "ec0588d9ed394eaa6230311311a2c3d3997e7697408a664fd057717d53e2db9c"
   head "https://github.com/dxx-rebirth/dxx-rebirth.git"
   license "GPL-3.0-only"
 
   depends_on "scons" => :build
   depends_on "pkg-config" => :build
+  depends_on "dylibbundler" => :build
   depends_on "sdl"
   depends_on "sdl_image"
   depends_on "sdl_mixer"
